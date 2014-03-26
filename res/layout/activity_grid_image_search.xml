@@ -28,7 +28,9 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginRight="100dp"
-            android:ems="10" >
+            android:ems="10"
+            android:hint="@string/query_hint"
+            android:singleLine="true" >
             <requestFocus />
         </EditText>
 
@@ -38,7 +40,8 @@
             android:layout_height="50dp"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/iv_settings"
-            android:src="@drawable/ic_action_search" />
+            android:src="@drawable/ic_action_search"
+            android:onClick="onSearchClick" />
 
         <ImageView
             android:id="@+id/iv_settings"
@@ -46,7 +49,8 @@
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/ic_action_settings" />
+            android:src="@drawable/ic_action_settings"
+            android:onClick="onSettingsClick" />
         
         
 	</RelativeLayout>
